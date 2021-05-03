@@ -1,0 +1,161 @@
+*{
+	font-family: 'Poppins', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	line-height: 1;
+	text-decoration: none;
+	color: white;
+}
+
+body{
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.content{
+	width: 650px;
+	height: 450px;
+	border: 1px solid #040404;
+	display: flex;
+	background-image: url(3.jpg);
+	background-size: cover;
+}
+
+main{
+	width: 60%;
+	display: flex;
+	align-items: flex-end;
+	padding: 30px;
+}
+
+aside{
+	width: 40%;
+	background-color: rgba(0,0,0,0.3);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	padding: 10px 20px;
+}
+
+.info{
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 2fr;
+	gap: 10px;
+	text-shadow: 1px 2px 2px black;
+}
+
+h1{
+	font-size: 5em;
+}
+
+h2{
+	font-size: 2.5em;
+}
+
+.find{
+	display: flex;
+	height: 40px;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.find input{
+	width: 70%;
+	background: none;
+	border-style: none;
+	border-bottom: 1px solid white;
+}
+
+.find input:hover{
+	color: #4eea02;
+}
+
+.find input:placeholder{
+	color: white;
+}
+
+.find input:focus{
+	font-size: 14px;
+	color: #4eea02;
+	outline: none;
+	border-bottom: 1px solid #4eea02;
+}
+
+.find button{
+	background-color: #ea6402;
+	border-style: none;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.find button:focus{
+	outline: none;
+}
+
+.details{
+	height: 320px;
+	overflow-y: scroll;
+}
+
+.details::-webkit-scrollbar{
+	width: 10px;
+	background: none;
+}
+
+.details::-webkit-scrollbar-thumb{
+	background: rgba(255,255,255,0);
+	border-radius: 4px;
+}
+
+.details::-webkit-scrollbar-thumb:hover{
+	background: rgba(255,255,255,0.1);
+}
+
+.city-recently{
+	margin-bottom: 20px;
+	border-bottom: 1px solid white;
+	padding-bottom: 20px;
+}
+
+.city-recently ul li{
+	list-style: none;
+	padding: 5px 0;
+}
+
+.city-recently ul li a{
+	transition: 0.3s;
+}
+
+.city-recently ul li a:hover{
+	color: #19b1e9;
+	font-size: 20px;
+}
+
+.weather-details{
+	margin-bottom: 20px;
+	border-bottom: 1px solid white;
+	padding-bottom: 20px;
+}
+
+.weather-details p{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+table{
+	width: 100%;
+}
+
+table td{
+	padding: 5px 0;
+}
+
+table td:nth-child(2){
+	text-align: right;
+	padding-right: 5px;
+}
